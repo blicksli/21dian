@@ -25,7 +25,7 @@ Page({
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
         //console.log(res.code);
         wx.request({
-          url: 'https://lnmpa.top/undergo/Time_Line/login',
+          url: '',
           data: {
             code: res.code,
           },
