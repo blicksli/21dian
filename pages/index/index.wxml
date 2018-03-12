@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <text class="user-title">抢21点</text>
+  </view>
+  <view class="usermatch">
+    <button bindtap='usermatch_click' class="{{hidden?'hidden':'show'}}">{{pipei}}</button>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

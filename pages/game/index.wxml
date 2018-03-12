@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="top">
+    <view class="userinfo_left">
+      <image class="userinfo-avatar" src="{{img_src1}}"></image>
+      <text class="userinfo-nickname">{{name1}}</text>
+      <button bindtap='userready_click' class="ready {{ready_hidden?'hidden':'show'}}">{{user_ready}}</button>
+    </view>
+    <view class="userinfo">
+      <text>vs</text>
+    </view>
+    <view class="userinfo_right">
+      <image class="userinfo-avatar" src="{{img_src2}}"></image>
+      <text class="userinfo-nickname">{{name2}}</text>
+      <button class="ready {{ready_hidden?'hidden':'show'}}">{{other_ready}}</button>
+    </view>
+  </view>
+  <view class="usermatch">
+    <text class="number_goal">{{sumnumber}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{tips}}</text>
+  </view>
+  <view class="{{hidden?'hidden':'show'}}">
+    <button class="number_button" bindtap='userchoice_one'>+1</button>
+    <button class="number_button" bindtap='userchoice_two'>+2</button>
+    <button class="number_button" bindtap='userchoice_three'>+3</button>
+  </view>
+</view>
