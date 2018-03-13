@@ -46,7 +46,7 @@ Page({
                   userinfo: res.userInfo,
                 })
                 wx.connectSocket({
-                  url: 'wss://li.lnmpa.top',
+                  url: '',
                 });
                 //console.log(res.userInfo);
               }
@@ -103,7 +103,6 @@ Page({
     })
   },
   usermatch_click:function(e){
-    console.log(1);
     var that = this;
     //wx.getStorage({
      // key: 'getnumber_user_openid',
